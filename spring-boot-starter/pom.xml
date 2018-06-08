@@ -138,16 +138,14 @@
     </build>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <uniqueVersion>true</uniqueVersion>
-        </snapshotRepository>
         <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-            <uniqueVersion>false</uniqueVersion>
+            <id>healthcare-releases</id>
+            <url>http://nexus.cegeka.be/nexus/content/repositories/healthcare-releases</url>
         </repository>
+        <snapshotRepository>
+            <id>healthcare-snapshots</id>
+            <url>http://nexus.cegeka.be/nexus/content/repositories/healthcare-snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
     <scm>
         <connection>scm:git:git://github.com/AxonFramework/AxonFramework.git</connection>
