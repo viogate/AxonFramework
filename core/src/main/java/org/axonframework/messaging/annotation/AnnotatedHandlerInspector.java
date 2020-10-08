@@ -19,6 +19,7 @@ package org.axonframework.messaging.annotation;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Inspector for a message handling target of type {@code T} that uses annotations on the target to inspect the
@@ -68,7 +69,7 @@ public class AnnotatedHandlerInspector<T> {
      */
     public static <T> AnnotatedHandlerInspector<T> inspectType(Class<? extends T> handlerType,
                                                                ParameterResolverFactory parameterResolverFactory) {
-        return createInspector(handlerType, parameterResolverFactory, new HashMap<>());
+        return createInspector(handlerType, parameterResolverFactory, new ConcurrentHashMap<>());
     }
 
 
