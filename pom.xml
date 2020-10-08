@@ -372,12 +372,12 @@
     <!-- deploy and release configuration -->
     <distributionManagement>
         <repository>
-            <id>healthcare-releases</id>
-            <url>http://nexus.cegeka.be/nexus/content/repositories/healthcare-releases</url>
+            <id>viollier-releases</id>
+            <url>http://valartifactorydev01:8081/artifactory/build-dependencies</url>
         </repository>
         <snapshotRepository>
-            <id>healthcare-snapshots</id>
-            <url>http://nexus.cegeka.be/nexus/content/repositories/healthcare-snapshots</url>
+            <id>viollier-snapshots</id>
+            <url>http://valartifactorydev01:8081/artifactory/build-dependencies-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <scm>
